@@ -4,6 +4,10 @@ Change front page:
 
 Blog Pages
 - create more
+  - workspace in the cloud
+  - kdice (file uploads and firestore)
+  - new wiki (gatsby) - maybe?
+  - old stock club posts
 - enable left/right navigation on BlogPage (once we have enough posts to warrant this)
 
 - add GitHub and LinkedIn links to about page
