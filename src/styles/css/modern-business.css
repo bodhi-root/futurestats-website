@@ -124,12 +124,34 @@ footer {
   margin-right: 8px;
 }
 
+.blog-list-entry {
+  margin-bottom: 2em;
+}
+.blog-list-entry h3 a {
+  color: #222;
+  text-decoration: none;
+}
+
+.blog-list-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0;
+}
+
 .blog-list-tags {
-  font-size: 125%;
-  padding-bottom: 8px;
+  font-size: 115%;
 }
 .blog-list-tags .label {
   margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.hr-title-underline {
+  margin: 0;
+}
+
+.blog-categories-well .btn {
   margin-bottom: 8px;
 }
 

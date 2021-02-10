@@ -26,7 +26,7 @@ function TagList({tags}) {
       {
         tagsList.map((tag) => (
           <TagLink tag={tag}>
-            <span className="label label-primary">{tag}</span>{ }
+            <span className="label label-default">{tag}</span>{ }
           </TagLink>
         ))
       }

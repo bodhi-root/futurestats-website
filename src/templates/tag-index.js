@@ -31,7 +31,7 @@ export const query = graphql`
             description
             tags
             image {relativePath}
-            date
+            date(formatString: "MMMM DD, YYYY")
           }
           excerpt
           fields {

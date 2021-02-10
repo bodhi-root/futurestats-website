@@ -1,5 +1,5 @@
 import React from "react";
-import {graphql, withPrefix, Link} from "gatsby";
+import {withPrefix, Link} from "gatsby";
 
 import Layout from "../components/Layout";
 import BlogSidebar from "../components/BlogSidebar";
@@ -54,7 +54,7 @@ function TagList({tags}) {
       {
         tagsList.map((tag) => (
           <TagLink tag={tag}>
-            <span className="label label-primary">{tag}</span>{ }
+            <span className="label label-default">{tag}</span>{ }
           </TagLink>
         ))
       }
@@ -62,15 +62,23 @@ function TagList({tags}) {
   );
 }
 
-function BlogEntry({title, description, author, tags, image, link}) {
+function BlogEntry({title, description, author, date, tags, image, link}) {
   return(
     <div>
-    <div className="row">
+    <div className="row blog-list-entry">
       <div className="col-md-12">
         <h3>
           <Link to={link}>{title}</Link> <small>by {author}</small>
         </h3>
-        <TagList tags={tags} />
+        <hr className="hr-title-underline"/>
+        <div className="blog-list-info">
+          <div className="blog-list-info-date">
+            <i className="fa fa-clock-o"></i> {date}
+          </div>
+          <div className="blog-list-tags">
+            <TagList tags={tags} />
+          </div>
+        </div>
       </div>
       <div className="col-md-6 img-blog-preview">
           <Link to={link}>
@@ -82,10 +90,9 @@ function BlogEntry({title, description, author, tags, image, link}) {
           <div>
             <a className="btn btn-primary" href={link}>Read More <i className="fa fa-angle-right"></i></a>
           </div>
-
       </div>
     </div>
-    <hr/>
+    {/*<hr/>*/}
     </div>
   );
 }
@@ -98,6 +105,7 @@ function BlogEntries({nodes}) {
                    title={node.frontmatter.title}
                    author={node.frontmatter.author}
                    description={node.frontmatter.description}
+                   date={node.frontmatter.date}
                    tags={node.frontmatter.tags}
                    image={withPrefix("/"+node.frontmatter.image.relativePath)}
                    link={node.fields.slug}
@@ -173,7 +181,7 @@ export default function BlogPage({tag, data}) {
           </div>
           <div className="col-md-8">
 
-              <hr />
+              {/*<hr />*/}
 
               <BlogEntries nodes={data.allMarkdownRemark.edges} />
 

@@ -13,6 +13,8 @@ export const query = graphql`
   query {
     allMarkdownRemark(
       filter: {fields: {content: {eq: "blog"}}}
+      limit: 1000
+      sort: { fields: [frontmatter___date], order: DESC }
     )
     {
       totalCount
@@ -25,7 +27,7 @@ export const query = graphql`
             description
             tags
             image {relativePath}
-            date
+            date(formatString: "MMMM DD, YYYY")
           }
           excerpt
           fields {

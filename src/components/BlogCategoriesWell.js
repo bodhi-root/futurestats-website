@@ -58,7 +58,7 @@ export default function BlogCategoriesWell() {
         }
 
         return(
-          <div className="well">
+          <div className="well blog-categories-well">
               <h4>Blog Categories</h4>
               <div className="row">
                   <div className="col-lg-6">
@@ -66,7 +66,11 @@ export default function BlogCategoriesWell() {
                         {
                           tagListLeft.map((entry) => (
                             <li>
-                              <TagLink tag={entry.tag}>{entry.tag} ({entry.count})</TagLink>
+                              <TagLink tag={entry.tag}>
+                              <button class="btn btn-default">
+                                {entry.tag} <span class="badge">{entry.count}</span>
+                              </button>
+                              </TagLink>
                             </li>
                           ))
                         }
@@ -78,7 +82,11 @@ export default function BlogCategoriesWell() {
                         {
                           tagListRight.map((entry) => (
                             <li>
-                              <TagLink tag={entry.tag}>{entry.tag} ({entry.count})</TagLink>
+                              <TagLink tag={entry.tag}>
+                              <button class="btn btn-default">
+                                {entry.tag} <span class="badge">{entry.count}</span>
+                              </button>
+                              </TagLink>
                             </li>
                           ))
                         }
