@@ -4,7 +4,6 @@ Change front page:
 
 Blog Pages
 - create more
-  - workspace in the cloud
   - kdice (file uploads and firestore)
   - new wiki (gatsby) - maybe?
   - old stock club posts

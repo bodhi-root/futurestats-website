@@ -3,7 +3,7 @@ title: Favicon Generator
 author: Dan Rogers
 description: >
   A cool site to generate "favicon.ico" files for your website.
-date: 2021-02-21
+date: 2021-02-10
 image: "preview.png"
 tags: [web development]
 ---
