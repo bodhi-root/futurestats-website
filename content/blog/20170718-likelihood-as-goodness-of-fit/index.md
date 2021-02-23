@@ -23,4 +23,4 @@ I didn’t mean to write 5 pages when I started this, but it proved rather inter
 
 ## Attachment
 
-* [Likelihood as a Goodness of Fit Metric.docx](Likelihood-as-a-Goodness-of-Fit-Metric.docx)
+* [Likelihood as a Goodness of Fit Metric.pdf](Likelihood-as-a-Goodness-of-Fit-Metric.pdf)
