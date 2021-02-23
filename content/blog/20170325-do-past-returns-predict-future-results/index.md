@@ -9,7 +9,7 @@ description: >
   short-term models show interesting features (such as short-term returns being
   negatively correlated), but they do not score high in predictive power.
 date: 2017-03-25
-image: "daily-returns.png"
+image: "returns-20.png"
 tags: [finance, stock market]
 ---
 

@@ -75,9 +75,7 @@ function BlogEntry({title, description, author, date, tags, image, link}) {
           <div className="blog-list-info-date">
             <i className="fa fa-clock-o"></i> {date}
           </div>
-          <div className="blog-list-tags">
-            <TagList tags={tags} />
-          </div>
+          <TagList tags={tags} />
         </div>
       </div>
       <div className="col-md-6 img-blog-preview">

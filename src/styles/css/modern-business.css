@@ -140,7 +140,10 @@ footer {
 }
 
 .blog-list-tags {
-  font-size: 115%;
+  font-size: 135%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end
 }
 .blog-list-tags .label {
   margin-right: 8px;
@@ -151,8 +154,17 @@ footer {
   margin: 0;
 }
 
+.blog-categories-well ul {
+  display: flex;
+  flex-direction: column;
+}
+
 .blog-categories-well .btn {
   margin-bottom: 8px;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Responsive Styles */

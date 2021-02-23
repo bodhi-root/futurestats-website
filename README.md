@@ -20,6 +20,7 @@ When building for production, use the following to build and then preview the
 website locally:
 
 ```
+gatsby clean
 gatsby build --prefix-paths
 gatsby serve --prefix-paths
 ```
