@@ -8,7 +8,8 @@ Blog Pages
 - create more
   - kdice (file uploads and firestore)
   - new wiki (gatsby) - maybe?
-  - old stock club posts
+  - stock analysis:
+    - index analysis (etf chart)
 - enable left/right navigation on BlogPage (once we have enough posts to warrant this)
 
 - add GitHub and LinkedIn links to about page
