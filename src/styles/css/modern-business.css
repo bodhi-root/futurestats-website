@@ -23,6 +23,18 @@ body {
     opacity: 0.8;
 }
 
+.portfolio-item .panel-header {
+  max-height: 50rem;
+}
+.portfolio-item .panel-title a {
+    color: #007BFF;
+    font-size: 125%;
+    margin-bottom: 8px;
+}
+.portfolio-item img {
+  max-width: 100%;
+  height: 200px;
+}
 
 .products .caption {
     height: 130px;

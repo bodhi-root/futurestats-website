@@ -1,7 +1,8 @@
 import React from "react";
-import Layout from "../components/Layout";
-
+import {Link} from "gatsby";
 import {Carousel} from "react-bootstrap";
+
+import Layout from "../components/Layout";
 
 function CarouselHeader () {
   return(
@@ -35,7 +36,7 @@ function QuickLinkRow() {
     <div className="row">
         <div className="col-lg-12">
             <h1 className="page-header">
-                Links to Other Sites
+                My Other Sites
             </h1>
         </div>
         <div className="col-md-4">
@@ -75,28 +76,54 @@ function QuickLinkRow() {
   );
 }
 
-function PortfolioEntry({link, image}) {
+/* image recommended to be 700x400 */
+function PortfolioEntry({title, image, link, description}) {
   return(
-    <div className="col-md-4 col-sm-6">
-        <a href={link}>
-            <img class="img-responsive img-portfolio img-hover" src={image} alt="" />
-        </a>
+    <div className="col-lg-4 col-sm-6 portfolio-item">
+      <div className="panel panel-default">
+        <div className="panel-heading">
+          <a href={link}>
+            <img src={image} alt="" />
+          </a>
+        </div>
+        <div className="panel-body">
+          <h4 className="panel-title">
+            <a href={link}>{title}</a>
+          </h4>
+          <p>{description}</p>
+        </div>
+      </div>
     </div>
   );
 }
 
 function PortfolioSection() {
   return(
-      <div class="row">
-          <div class="col-lg-12">
-              <h2 class="page-header">Portfolio Heading</h2>
+      <div>
+        <div class="row">
+          <div className="col-lg-12">
+            <h1 className="page-header">
+              Featured Blog Entries
+            </h1>
+
           </div>
-          <PortfolioEntry link="portfolio-item.html" image="https://placehold.it/700x450" />
-          <PortfolioEntry link="portfolio-item.html" image="https://placehold.it/700x450" />
-          <PortfolioEntry link="portfolio-item.html" image="https://placehold.it/700x450" />
-          <PortfolioEntry link="portfolio-item.html" image="https://placehold.it/700x450" />
-          <PortfolioEntry link="portfolio-item.html" image="https://placehold.it/700x450" />
-          <PortfolioEntry link="portfolio-item.html" image="https://placehold.it/700x450" />
+        </div>
+        <div class="row">
+            <PortfolioEntry title="Retirement Planning"
+                            link="/blog/20121029-retirement-planning/"
+                            image="/blog/20121029-retirement-planning/savings-targets.png"
+                            description="Guidelines for planning retirement, including savings targets by age and changes to portfolio selection over time."/>
+
+            <PortfolioEntry title="P/E Ratios and S&P 500 Returns"
+                            link="/blog/20170813-pe-ratios-and-sp500-returns/"
+                            image="/blog/20170813-pe-ratios-and-sp500-returns/cnbc-chart.png"
+                            description="One of the best predictive models for stock-market return over the next couple of years is based on Shiller's P/E Ratio."/>
+
+            <PortfolioEntry title="Simple GCP Web App"
+                            link="/blog/20210303-simple-webapp-in-gcp/"
+                            image="/blog/20210303-simple-webapp-in-gcp/preview.png"
+                            description="Re-usable code for creating a GCP webapp that stores data in Firestore and images in GCS. Dropwizard is used for the web service."/>
+        </div>
       </div>
   );
 }
@@ -116,14 +143,18 @@ export default function Home() {
             </div>
             <div className="col-md-6">
                 <p>This page is intended to be both a blog and a home page from which you can jump to any of my various projects. At the moment I have 3 public projects that each have their own purpose and look-and-feel. These can be found immediately below this section. I'd also like to keep a blog - mainly of technical articles - including articles on how these various sites were developed. I've tried to keep a blog in the past though, and that didn't last very long. Maybe this time will be different.</p>
+                <p>
+                <a href="/blog/" className="btn btn-primary">View Blog</a>
+                </p>
             </div>
             <div className="col-md-6">
                 <img className="img-responsive" src="images/sisyphus-shadow2.jpg" alt="Sisyphus" />
             </div>
         </div>
 
-        <QuickLinkRow />
-        {/*<PortfolioSection />*/}
+       <PortfolioSection />
+       <QuickLinkRow />
+
 
     </div>
     </Layout>
