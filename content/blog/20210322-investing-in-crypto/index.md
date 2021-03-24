@@ -19,13 +19,13 @@ This past week I met with someone who encouraged me to "up my game" when it come
 
 The advisor walked me and my dad through his own experience trading crypto assets and showed us the tools he used to accomplish the job.  This included:
 
-1. Coinbase Account - An online wallet that is easy to fund from a bank and also lets you buy/sell various crypto coins
-2. Atomic Wallet - A software-based wallet that allows you to take ownership of your crypto assets and manage them yourself
-3. Theta Wallet - An online wallet for THETA and TFUEL.  (This is the only way to store these assets.)
-4. Ledger Nano X - A hardware-based wallet that allows you to store crypto assets and secret keys
-5. Cobo Steel Tablet - Used for secure seed-phrase storage
-6. Decentralized Exchanges - A way to exchange cryptocurrencies without having to create an account on a specific exchange.  https://changenow.io/ and https://godex.io are two examples we used, each supporting a wide variety of assets
-7. CoinMarketCap Account - A nice way to monitor crypto prices and keep track of your portfolio in one place
+1. __Coinbase Account__ - An online wallet that is easy to fund from a bank and also lets you buy/sell various crypto coins
+2. __Atomic Wallet__ - A software-based wallet that allows you to take ownership of your crypto assets and manage them yourself
+3. __Theta Wallet__ - An online wallet for THETA and TFUEL.  (This is the only way to store these assets.)
+4. __Ledger Nano X__ - A hardware-based wallet that allows you to store crypto assets and secret keys
+5. __Cobo Steel Tablet__ - Used for secure seed-phrase storage
+6. __Decentralized Exchanges__ - A way to exchange cryptocurrencies without having to create an account on a specific exchange.  https://changenow.io/ and https://godex.io are two examples we used, each supporting a wide variety of assets
+7. __CoinMarketCap Account__ - A nice way to monitor crypto prices and keep track of your portfolio in one place
 
 Each tool serves a purpose, and since I love taking notes and am always afraid of forgetting something, I will document each of these below.  My goal was to reproduce the portfolio below using these tools:
 
@@ -157,7 +157,7 @@ In order to keep track of this I created a spreadsheet detailing how much of eac
 
 CoinMarketCap (https://coinmarketcap.com) is a website where you can track the price of various cryptocurrencies.  You can also create a free account to build a watchlist of select assets or to build a fake portfolio.  The latter is the best way to track the value of your portfolio in realtime from any location without having to ever open up a spreadsheet or having to open your wallets or exchange accounts.  You can simply build a portfolio on their website that contains your same holdings and then login to the website to see how you're doing.
 
-![CoinMarketCap Portfolio Screenshot](coinmarketcap-portfolio-screenshot.png)
+![CoinMarketCap Portfolio Screenshot](coinmarketcap-portfolio.png)
 
 When you buy or sell cryptocurrencies you can add transactions on the website to record this.  Exchanging one cryptocurrency for another is a bit tricky.  The website can only log this exchange as:
 

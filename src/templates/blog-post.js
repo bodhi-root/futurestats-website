@@ -38,7 +38,7 @@ export default function BlogPost({ data }) {
   const post = data.markdownRemark;
   return (
     <Layout>
-      <div className="container">
+      <div className="container blog-post">
         <TitleRow title={post.frontmatter.title}
                   author={post.frontmatter.author}
                   />
@@ -55,7 +55,7 @@ export default function BlogPost({ data }) {
               </div>
             </div>
             <hr />
-            <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            <div className="blog-post-body" dangerouslySetInnerHTML={{ __html: post.html }} />
           </div>
 
           <BlogSidebar />

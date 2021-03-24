@@ -117,6 +117,18 @@ footer {
   border-radius: 15px;
 }
 
+/* Blog Posts */
+
+.blog-post-body table th,
+.blog-post-body table td {
+    border: 1px solid #999;
+    padding: 3px;
+}
+
+.blog-post-body table th {
+  background-color: #eee;
+}
+
 .img-blog-preview img {
   height: 200px;
   border: 1px solid #ddd;
