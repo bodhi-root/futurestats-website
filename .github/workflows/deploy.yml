@@ -30,7 +30,7 @@ jobs:
         docker run --rm \
           -v ${{ github.workspace }}:/workspace \
           -w /workspace \
-          -e GH_TOKEN=${{ secrets.GITHUB_TOKEN }}
+          -e GH_TOKEN=${{ secrets.GITHUB_TOKEN }} \
           futurestats-website \
           bash -c "npm run deploy"
         
