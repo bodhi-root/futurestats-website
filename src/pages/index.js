@@ -144,7 +144,7 @@ export default function Home() {
             <div className="col-md-6">
                 <p>This page is intended to be both a blog and a home page from which you can jump to any of my various projects. At the moment I have 3 public projects that each have their own purpose and look-and-feel. These can be found immediately below this section. I'd also like to keep a blog - mainly of technical articles - including articles on how these various sites were developed. I've tried to keep a blog in the past though, and that didn't last very long. Maybe this time will be different.</p>
                 <p>
-                <a href={withPrefix=("/blog/")} className="btn btn-primary">View Blog</a>
+                <a href={withPrefix("/blog/")} className="btn btn-primary">View Blog</a>
                 </p>
             </div>
             <div className="col-md-6">
