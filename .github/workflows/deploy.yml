@@ -24,15 +24,31 @@ jobs:
           -w /workspace \
           futurestats-website \
           bash -c "npm install && npm run build"
+    
+    - name: Setup Pages
+      id: pages
+      uses: actions/configure-pages@v5
+
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: /workspace/public
 
     - name: Deploy to GitHub Pages
-      run: |
-        docker run --rm \
-          -v ${{ github.workspace }}:/workspace \
-          -w /workspace \
-          -e GH_TOKEN=${{ secrets.GITHUB_TOKEN }} \
-          futurestats-website \
-          bash -c "git config --global user.email '${{ secrets.GITHUB_EMAIL }}' && \
-                   git config --global user.name '${{ github.actor }}' && \
-                   npm run deploy"
+      id: deployment
+      uses: actions/deploy-pages@v4
+      environment:
+        name: github-pages
+        url: ${{ steps.deployment.outputs.page_url }}
+
+    #- name: Deploy to GitHub Pages
+    #  run: |
+    #    docker run --rm \
+    #      -v ${{ github.workspace }}:/workspace \
+    #      -w /workspace \
+    #      -e GH_TOKEN=${{ secrets.GITHUB_TOKEN }} \
+    #      futurestats-website \
+    #      bash -c "git config --global user.email '${{ secrets.GITHUB_EMAIL }}' && \
+    #               git config --global user.name '${{ github.actor }}' && \
+    #               npm run deploy"
         
