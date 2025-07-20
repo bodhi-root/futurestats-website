@@ -5,7 +5,8 @@
  */
 
 module.exports = {
-  pathPrefix: "/",
+  pathPrefix: "/futurestats-website",
+  /*pathPrefix: "/",*/
   /*pathPrefix: "/futurestats-website",*/
   /* Your site config here */
   plugins: [

@@ -1,0 +1,6 @@
+{
+    "name": "Futurestats Website",
+    "build": {
+        "dockerfile": "Dockerfile"
+    }
+}
