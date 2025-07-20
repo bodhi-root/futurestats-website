@@ -1,5 +1,9 @@
 # Futurestats Website
 
+Website can be viewed on GitHub pages at:
+
+* https://bodhi-root.github.io/
+
 ## Design Notes
 
 The template used for this website was [Start Bootstrap](http://startbootstrap.com/) - [Modern Business](http://startbootstrap.com/template-overviews/modern-business/).
@@ -21,6 +25,19 @@ gatsby develop
 ```
 
 ## Production Build
+
+You can run a production build locally using:
+
+```
+gatsby clean
+gatsby build --prefix-paths
+```
+
+This will create the files for the website in the `public` folder. A GitHub Action is setup to do this automatically though and to upload the contents of the `public` folder to the `gh-pages` branch of the repo for it to be served.
+
+## Production Build (Old Version)
+
+NOTE: This method involved building manually on my computer and uploading the results to Google Cloud using `gsutil rsync`. The new version runs on GitHub pages and builds automatically when code is committed to the master branch.
 
 When building for production, use the following to build and then preview the
 website locally:
