@@ -2,7 +2,7 @@
 
 Website can be viewed on GitHub pages at:
 
-* https://bodhi-root.github.io/
+* https://bodhi-root.github.io/futurestats-website/
 
 ## Design Notes
 
